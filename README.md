@@ -1,10 +1,14 @@
-# GettingAndCleaningData
-Project 1 for Coursera Getting and Cleaning Data Course
-Tidied Data from the Human Activity Recognition Using Smartphones Dataset
-A few steps were taken to transform the initial data set. The test and train sets have were merged and the subject identifiers and activity labels were pulled in to create a single data set. The activity identifiers were translated from identifiers into human-readable names. Only the mean and standard deviation variables were kept. Those variables were further summarized by taking their mean for each subject/activity pair. The data is in "wide" format as described by Wickham; there is a single row for each subject/activity pair, and a single column for each measurement.
+# Coursera.org Getting And Cleaning Data Project 1 
 
-The final data set can be found in the tidyMeans.txt file, which can be read into R with read.table("tidyMeans.txt", header = TRUE). A detailed description of the variables can be found in CodeBook.md. The basic naming convention is:
+The data used in this was from from the Human Activity Recognition Using Smartphones Dataset
 
+Both the test and train datasets (in the data/test and the data/train) directories were merged with identifers and labels created into a single dataset. The activitiy identifers were replaced with more meaningful names (such as walking etc rather than the original integer identifier). From th originan data set only the mean and the standard deviatun were kept and summarised futher by getting the mean for each subject activity pair.
+
+The final data set is called tidy2.txt.
+
+codebook.md contnains the variable description but the naming convention used is:
 Mean{timeOrFreq}{measurement}{meanOrStd}{XYZ}
-
-Where timeOrFreq is either Time or Frequency, indicating whether the measurement comes from the time or frequency domain, measurement is one of the original measurement features, meanOrStd is either Mean or StdDev, indicating whether the measurement was a mean or standard deviation variable, and XYZ is X, Y, or Z, indicating the axis along which the measurement was taken, or nothing, for magnitude measurements.
+timeOrFreq: either Time or Frequency, the type of measurement
+measurement:  one of the original measurement features
+meanOrStd: either Mean or StdDev, a mean or standard deviation variable
+XYZ: X, Y, or Z, axis along which the measurement was taken, or nothing, for magnitude measurements
