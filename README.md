@@ -7,8 +7,14 @@ Both the test and train datasets (in the data/test and the data/train) directori
 The final data set is called tidy2.txt.
 
 codebook.md contnains the variable description but the naming convention used is:
+
 Mean{timeOrFreq}{measurement}{meanOrStd}{XYZ}
+
 timeOrFreq: either Time or Frequency, the type of measurement
+
 measurement:  one of the original measurement features
+
 meanOrStd: either Mean or StdDev, a mean or standard deviation variable
+
 XYZ: X, Y, or Z, axis along which the measurement was taken, or nothing, for magnitude measurements
+
